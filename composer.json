@@ -6,7 +6,6 @@
         "framework",
         "laravel"
     ],
-
     "license": "MIT",
     "require": {
         "php": "^8.2",
@@ -23,7 +22,8 @@
     },
     "config": {
         "platform": {
-            "php": "8.2",
+            "php": "8.2"
+        },
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true
@@ -61,8 +61,7 @@
             "@php artisan key:generate --ansi"
         ],
         "prod": [
-        "cross-env NODE_ENV=production NODE_OPTIONS=--openssl-legacy-provider webpack --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+            "cross-env NODE_ENV=production NODE_OPTIONS=--openssl-legacy-provider webpack --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
         ]
     }
-}
 }
