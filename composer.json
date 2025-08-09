@@ -59,6 +59,9 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "prod": [
+        "cross-env NODE_ENV=production NODE_OPTIONS=--openssl-legacy-provider webpack --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
         ]
     }
 }
