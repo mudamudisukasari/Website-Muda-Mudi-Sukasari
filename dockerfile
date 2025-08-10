@@ -35,3 +35,7 @@ RUN composer install --ignore-platform-reqs --no-dev --optimize-autoloader
 
 # Set permission storage dan bootstrap/cache
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
+
+RUN mkdir -p /var/log/nginx && mkdir -p /var/cache/nginx
+RUN composer install --ignore-platform-reqs
+RUN npm ci   # <-- ini yang kita ganti
