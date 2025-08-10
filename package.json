@@ -23,5 +23,8 @@
         "vue": "^2.5.17",
         "vue-template-compiler": "^2.6.10",
         "webpack": "^5.101.0"
+    },
+    "engines": {
+        "node": "18.x"
     }
 }
